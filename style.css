@@ -14,7 +14,7 @@ body {
 
 }
 
-.main-container {
+.options-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .grid { 
@@ -32,5 +32,19 @@ body {
     width: 500px;
     border: black 1px solid;
     background-color: white;
-   
 }
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: black; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+
+  
