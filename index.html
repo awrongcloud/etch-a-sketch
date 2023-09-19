@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
 </head>
 
 <body>
@@ -22,13 +21,16 @@
                 <button id="eraserBtn">Eraser</button>
                 <button id="clearBtn">Clear</button>
                 <input type="range" min="1" max="16" value="3" class="slider" id="myRange">
-                <p>Grid Size:<span id="gridSizeRangeOutput"></span></p>
+                <p>Grid Size:<span id="gridSizeRange"></span></p>
             </div>
 
 
            
-            <div id="grid" class="grid"></div>
+            <div id="grid-container"></div>
         </div>
     </div>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
