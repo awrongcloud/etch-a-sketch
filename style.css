@@ -37,7 +37,8 @@ body {
 
 .lines {
     border-style: solid;
-    border-color: grey;
+    border-color: lightgrey;
+    border-width: 1px;
 
 }
 

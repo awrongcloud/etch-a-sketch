@@ -11,7 +11,6 @@ let grid = document.querySelector("#grid-container");
 function clear() {
     grid.textContent = "";
 }
-
 //create grid
 function createGrid(size) {
     grid.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
@@ -24,4 +23,16 @@ function createGrid(size) {
     }
 }
 
-createGrid(16);
+
+//slider function
+function slide () {
+    gridSize.textContent = ` ${slider.value} x ${slider.value}`;
+    clear();
+    createGrid(slider.value);
+}
+
+
+
+//AddEventListeners
+clearBtn.addEventListener("click",clear);
+slider.addEventListener("input", slide);
