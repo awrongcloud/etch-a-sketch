@@ -7,9 +7,12 @@ let slider = document.querySelector(".slider");
 let gridSize = document.querySelector("#gridSizeRange");
 let grid = document.querySelector("#grid-container");
 
+let currentColor;
+
 //clears entire grid
 function clear() {
     grid.textContent = "";
+    grid.style.backgroundColor = "#FFFFFF";
 }
 //create grid
 function createGrid(size) {
@@ -20,7 +23,11 @@ function createGrid(size) {
         let square = document.createElement('div');
         square.classList.add('lines');
         grid.appendChild(square);
-    }
+
+        square.addEventListener("mouseover", function () {
+            square.style.backgroundColor = currentColor;
+        })
+    } 
 }
 
 
@@ -36,3 +43,10 @@ function slide () {
 //AddEventListeners
 clearBtn.addEventListener("click",clear);
 slider.addEventListener("input", slide);
+colorBtn.addEventListener("click", function () {
+     currentColor = color.value;
+})
+
+
+
+

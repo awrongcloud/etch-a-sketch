@@ -39,8 +39,8 @@ body {
     border-style: solid;
     border-color: lightgrey;
     border-width: 1px;
-
 }
+
 
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
@@ -53,6 +53,8 @@ body {
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
+
+  
 
 
   
