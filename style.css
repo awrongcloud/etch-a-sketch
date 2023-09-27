@@ -41,6 +41,15 @@ body {
     border-width: 1px;
 }
 
+button:active{
+    background-color: rgba(89, 175, 250, 0.911);
+    border-color: black;
+}
+
+.active {
+    background-color: rgba(89, 175, 250, 0.911);
+    border-color: black;
+}
 
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
